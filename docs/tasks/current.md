@@ -11,4 +11,4 @@ acs = ["SANDBOX-01-AC-01"]
 scope = ["docs/specs/sandbox.md", "docs/tasks", "docs/sdd/traceability.json", "tests/test_sandbox_marker.py", "markers"]
 ```
 
-Fixture revision current.
+Fixture revision premerge.
