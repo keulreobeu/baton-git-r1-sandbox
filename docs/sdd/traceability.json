@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "0046ee1c06523436b40ae634e8c5850bb7963d71",
+  "documents": [
+    "docs/specs/sandbox.md",
+    "docs/tasks/sandbox.md",
+    "docs/tasks/current.md",
+    "docs/tasks/changed-head.md",
+    "docs/tasks/changed-base.md",
+    "docs/tasks/advance.md"
+  ],
+  "features": [
+    {
+      "id": "SANDBOX-01",
+      "spec": "docs/specs/sandbox.md",
+      "requirements": [
+        {
+          "id": "SANDBOX-01-REQ-01",
+          "acs": [
+            "SANDBOX-01-AC-01"
+          ]
+        }
+      ],
+      "acs": [
+        {
+          "id": "SANDBOX-01-AC-01",
+          "tests": [
+            {
+              "file": "tests/test_sandbox_marker.py",
+              "symbol": "SandboxMarkerTests.test_markers_are_valid"
+            },
+            {
+              "file": "tests/test_git_github.py",
+              "symbol": "GitHubTests.test_registration_and_trusted_checks"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
